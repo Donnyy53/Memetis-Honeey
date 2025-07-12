@@ -1,0 +1,49 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #fff9ec; color: #36230a; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+header { background: #ffedbc; padding: 18px 0; border-bottom: 2px solid #f8c04e; }
+.logo { font-weight: bold; font-size: 2rem; letter-spacing: 1px; }
+.logo span { color: #f5b501; }
+nav ul { list-style: none; display: flex; gap: 32px; }
+nav a { text-decoration: none; color: #36230a; font-weight: 500; transition: color 0.2s; }
+nav a:hover { color: #f5b501; }
+
+.hero { background: linear-gradient(90deg, #f8c04e 0%, #fff4d0 100%); padding: 64px 0 48px 0; text-align: center; }
+.hero h1 { font-size: 2.7rem; margin-bottom: 18px; }
+.hero p { font-size: 1.25rem; margin-bottom: 22px; }
+.cta-btn { background: #f5b501; color: #fff; padding: 13px 36px; border: none; border-radius: 2em; font-size: 1.1rem; text-decoration: none; font-weight: bold; box-shadow: 0 2px 12px #ffd97442; transition: background 0.2s; }
+.cta-btn:hover { background: #36230a; color: #fff4d0; }
+
+.produkte { padding: 60px 0 36px 0; text-align: center; }
+.produkte h2 { margin-bottom: 36px; color: #c69019; }
+.product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 32px; }
+.product-card { background: #fff; border-radius: 18px; box-shadow: 0 2px 10px #f5b50122; padding: 22px; transition: transform 0.2s, box-shadow 0.2s; }
+.product-card:hover { transform: translateY(-6px) scale(1.02); box-shadow: 0 6px 30px #f5b50138; }
+.product-card img { max-width: 100%; height: 190px; object-fit: cover; border-radius: 14px; }
+.product-card h3 { margin: 16px 0 10px 0; font-size: 1.2rem; }
+.product-card p { font-size: 1rem; margin-bottom: 12px; }
+.preis { font-weight: bold; color: #f5b501; font-size: 1.2rem; }
+
+.about { background: #fff4d0; padding: 54px 0; text-align: center; }
+.about h2 { margin-bottom: 18px; color: #c69019; }
+.about p { max-width: 700px; margin: 0 auto; font-size: 1.1rem; }
+
+.kontakt { padding: 54px 0; background: #fff9ec; text-align: center; }
+.kontakt h2 { margin-bottom: 18px; color: #c69019; }
+form { max-width: 430px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; }
+input, textarea { padding: 13px; border-radius: 8px; border: 1px solid #f8c04e; font-size: 1rem; }
+button[type="submit"] { background: #f5b501; color: #fff; padding: 13px 0; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: background 0.2s; }
+button[type="submit"]:hover { background: #36230a; }
+.form-message { margin-top: 16px; font-weight: bold; }
+
+footer { background: #36230a; color: #fff4d0; padding: 26px 0; text-align: center; }
+footer .container { display: flex; flex-direction: column; gap: 12px; align-items: center; }
+footer .socials { margin-top: 8px; }
+footer .socials a { color: #f5b501; margin: 0 10px; text-decoration: none; font-weight: 500; }
+footer .socials a:hover { color: #fff4d0; text-decoration: underline; }
+
+@media (max-width: 700px) {
+  .product-grid { grid-template-columns: 1fr; }
+  nav ul { flex-direction: column; gap: 12px; }
+  .logo { font-size: 1.35rem; }
+}
